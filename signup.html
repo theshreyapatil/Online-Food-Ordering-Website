@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> TAKE AWAY </title>
+	<link rel="stylesheet" href="css/mystyle.css"> 
+    <script type="text/javascript" src="./js/signupvalidation.js"></script>
+</head>
+<body>
+<header>
+        <div class = "main">   
+            <nav>
+                <div class="logo">
+                    <h1>TAKE AWAY</h1>
+                </div>    
+                <ul>
+                    <li><a href="index.html" class = "active">Home</a></li>
+                    <li><a href="Signup.html">Signup</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>    
+		    </nav> 
+        </div>
+</header>
+    
+<main> 
+    <div class="wrapper">
+    <section class="form">
+        <h2>SIGN UP</h2>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <form name="info" onsubmit="validate(); return false;" method="post" >     
+          <input id="name" type="text" name="name" placeholder="Enter Name"  oninput="checkName()" required>  
+          <input id="email" type="text" name="email" placeholder="Enter Email" oninput="checkEmail()" required> 
+          <input id="password" type="password" name="password" placeholder="Enter Password" oninput="checkPassword()" required>
+          <hr> 
+          <p>Already have an account? <a href="login.html">login</a>.</p>
+          <input class="sub" type="submit" value="SIGN UP">
+        </form>
+		</section>
+    </div>
+</main>
+
+</body>
+</html>

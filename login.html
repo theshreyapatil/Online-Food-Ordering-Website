@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>TAKE AWAY </title>
+	<link rel="stylesheet" href="css/mystyle.css">
+    <script type="text/javascript" src="./js/loginvalidation.js"></script>
+</head>
+<body>
+<header>
+        <div class = "main">   
+            <nav>
+                <div class="logo">
+                    <h1>TAKE AWAY</h1>
+                </div>    
+                <ul>
+                    <li><a href="index.html" class = "active">Home</a></li>
+                    <li><a href="Signup.html">Signup</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>    
+		    </nav> 
+        </div>
+    </header>
+ <main>
+       <div class="wrapper">
+           <h2>LOGIN</h2>
+           <p>Please fill in this form to login.</p>
+           <hr>
+           <form name="info" onsubmit="validate(); return false;" method="post">
+           <input id="email" type="text" name="email" placeholder="Enter Email" oninput="checkEmail()" required> 
+           <input id="password" type="password" name="password" placeholder="Enter Password" oninput="checkPassword()" required>
+           <hr> 
+           <input class="sub" type="submit" value="LOGIN">
+           </form>        
+           </div>
+  </main>
+
+</body>
+</html>
